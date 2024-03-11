@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# App de noticias con Vite, React, Typescript, Material UI y react-router-dom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue creado utilizando Vite como herramienta de construcción, React como framework de frontend, Typescript para tipado estático, Material UI para el diseño de la interfaz y react-router-dom para la navegación entre páginas.
 
-Currently, two official plugins are available:
+Se utilizó como API https://jsonplaceholder.typicode.com/ para obtener los articulos, sus autores y comentarios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
 
-## Expanding the ESLint configuration
+Para instalar el proyecto, sigue estos pasos:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal en la carpeta del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Ejecuta el siguiente comando para iniciar el servidor en modo dev
+
+```bash
+npm run dev
+```
